@@ -1,37 +1,50 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\Course;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Validation\Rule;
 
-class courseController extends Controller
+class CourseController extends Controller
 {
-    public function index()
-    {
-        $courses =Course::all();
-        return view ('course.index', comapct('courses'));
-    } 
+
+  public function index(){$data = Course::get();
+      return view('course.index',  compact('data'));}
 
 
-    public function create()
-    {
-        return view('courses.create');
-    }
+  public function create(){
+      return view('course.create');}
 
-    public function store(Request $request)
+    /**
+     
+* Store a newly created resource in storage.*/
+  public function store(Request $request){  // Debugging the incoming form data//dd($request->all());
 
-    {
-        dd($request->all());
-
-        $request-> validate([
-            'title'=> 'required|string|max:255',
-            'credit_hrs'=> 'required|integer', 
+            $validate = $request->validate([
+            'title' => 'required|max:255',
+            'credit_hrs' => 'required|integer|min:1|max:4',
         ]);
-        Course::create([
-            'title'=> $request->title,
-            'credit_hrs'=> $request->credit_hrs,
-        ]);
-        return redirect()->route('courses.index')->with('sucess','Course created successfully.');
+
+        try
+        {
+            if($validate)
+            {
+                Course::create($request->all());
+                Session::flash('message', 'Course created successfully!');
+                Session::flash('alert-class', 'alert-success');
+            } else{
+                Session::flash('message', 'Error. Validation failed.');
+                Session::flash('alert-class', 'alert-danger');
+            }
+        } catch (\Exception $e)
+        {
+            Session::flash('message', 'Something went wrong. Please try again later.');
+            Session::flash('alert-class', 'alert-danger');
+        }
+        return redirect(route('course.index'));
     }
 
 }

@@ -2,13 +2,27 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
-Route::get('/', function () {
-    return view('welcome');
+route::get('/',[HomeController::class,'index']);
+
+// Route::get('/layouts', function () {
+//     return view('layouts.web');
+// });
+
+
+// Route::get('/post', function () {
+//     return view('post');
+// });
+
+
+Route::middleware('auth')->name('course.')->prefix('course')->group(function() {
+    Route::get('/', [CourseController::class, 'index'])->name('index');
+    Route::get('create', [CourseController::class, 'create'])->name('create');
+    Route::post('store', [CourseController::class, 'store'])->name('store');
 });
-
-Route::resource('courses', CourseController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
