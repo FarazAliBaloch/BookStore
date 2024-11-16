@@ -1,6 +1,6 @@
 <header>
     <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg bg-success">
+        <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"> <i class="fas fa-book-reader fa-2x mx-3"></i> Book Nest</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
