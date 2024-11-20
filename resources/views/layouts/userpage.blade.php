@@ -1,8 +1,6 @@
 @extends(layouts.main)
 
 @section('content')
-
-    
     <main>
         <section class="section-1">
             <div class="container text-center">
@@ -229,6 +227,6 @@
             </div>
         </section>
     </main>
-  @endsection
+@endsection
 
     
