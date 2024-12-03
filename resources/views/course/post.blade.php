@@ -1,1 +1,0 @@
-<h1>Naya Post </h1>

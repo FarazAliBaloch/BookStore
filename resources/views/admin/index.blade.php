@@ -1,3 +1,7 @@
+@extends('layouts.main')
+
+@section('content')
+
 <header>
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg bg-light">
@@ -33,20 +37,41 @@
             </div>
         </nav>
     </div>
-    <div class="container text-center">
-        <div class="row">
-            <div class=" col-md-7 col-sm-12">
-                <h1>EXCITING BOOKS</h1>
-                <p>“Books are the plane, and the train, and the road.
-                    They are the destination, and the journey.
-                    They are home.” ― Anna Quindlen</p>
-                <button class="btn btn-light px-5 py-2">Buy Now! For $5.99</button>
-            </div>
-
-
-            <div class="col-md-5 col-sm-12  h-25">
-                <img src="/img/ah.png" alt="Book" class="img-fluid">
-            </div>
-        </div>
-    </div>
+    
 </header>
+
+    <div class="container mt-5">
+        <h1>Customers</h1>
+        <a href="{{ route('customer.create') }}" class="btn btn-primary mb-3">Add Customer</a>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ($customers as $customer)
+                    <tr>
+                        <td>{{ $customer->first_name }}</td>
+                        <td>{{ $customer->last_name }}</td>
+                        <td>{{ $customer->email }}</td>
+                        <td>
+                            <a href="{{ route('customer.show', $customer->id) }}" class="btn btn-info btn-sm">View</a>
+                            <a href="{{ route('customer.edit', $customer->id) }}" class="btn btn-warning btn-sm">Edit</a>
+                            <form action="{{ route('customer.destroy', $customer->id) }}" method="POST"
+                                style="display:inline-block;">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
+@endsection
