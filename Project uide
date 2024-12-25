@@ -1,0 +1,12 @@
+To run this Project 
+First you Need to open Xmapp Controller
+then start Apache and mysql
+after that open project folder with vs code
+then in termianl run command php artisan migrate 
+and then type yes 
+after that run command php artisan serve
+then copy link and paste it on browser URL 
+thats it 
+Now to open admin panel in Url /welcome to open dashboard 
+login or resgister
+thats it
