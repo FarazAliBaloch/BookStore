@@ -65,22 +65,7 @@
                 <label for="address" class="form-label">Address</label>
                 <input type="text" class="form-control" id="address" name="address" value="{{ $customer->address }}" required>
             </div>
-            <div class="mb-3">
-                <label for="address_2" class="form-label">Address 2</label>
-                <input type="text" class="form-control" id="address_2" name="address_2" value="{{ $customer->address_2 }}">
-            </div>
-            <div class="mb-3">
-                <label for="city" class="form-label">City</label>
-                <input type="text" class="form-control" id="city" name="city" value="{{ $customer->city }}" required>
-            </div>
-            <div class="mb-3">
-                <label for="state" class="form-label">State</label>
-                <input type="text" class="form-control" id="state" name="state" value="{{ $customer->state }}" required>
-            </div>
-            <div class="mb-3">
-                <label for="zip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="zip" name="zip" value="{{ $customer->zip }}" required>
-            </div>
+            
             <button type="submit" class="btn btn-primary">Save Changes</button>
         </form>
     </div>

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Customer;
 use Illuminate\Http\Request;
 
-class AdminController extends Controller
+class CustomerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class AdminController extends Controller
     public function index()
     {
         $customers = Customer::all();
-        return view('admin.index', compact('customers'));
+        return view('customers.index', compact('customers'));
     }
 
     /**
@@ -21,7 +21,7 @@ class AdminController extends Controller
      */
     public function create()
     {
-        return view('admin.create');
+        return view('customers.create');
 
     }
 
@@ -36,10 +36,7 @@ class AdminController extends Controller
             'email' => 'required|email|unique:customers,email',
             'password' => 'required|string|min:8',
             'address' => 'required|string|max:255',
-            'address_2' => 'nullable|string|max:255',
-            'city' => 'required|string|max:255',
-            'state' => 'required|string|max:255',
-            'zip' => 'required|string|max:10',
+            
         ]);
     
         // Store the customer data
@@ -55,7 +52,7 @@ class AdminController extends Controller
     public function show($id)
     {
         $customer = Customer::findOrFail($id);
-        return view('admin.show', compact('customer'));
+        return view('customers.show', compact('customer'));
     }
 
     /**
@@ -64,7 +61,7 @@ class AdminController extends Controller
     public function edit($id)
     {
         $customer = Customer::findOrFail($id);
-        return view('admin.edit', compact('customer'));
+        return view('customers.edit', compact('customer'));
     }
 
     /**
@@ -78,16 +75,13 @@ class AdminController extends Controller
             'email' => 'required|email',
             'password' => 'required|min:6',
             'address' => 'required',
-            'address_2' => 'nullable',
-            'city' => 'required',
-            'state' => 'required',
-            'zip' => 'required',
+            
         ]);
 
         $customer = Customer::findOrFail($id);
         $customer->update($request->all());
 
-        return redirect()->route('customers.index')->with('success', 'Customer updated successfully.');
+        return redirect()->route('customer.index')->with('success', 'Customer updated successfully.');
     }
 
 
@@ -99,6 +93,6 @@ class AdminController extends Controller
         $customer = Customer::findOrFail($id);
         $customer->delete();
 
-        return redirect()->route('customers.index')->with('success', 'Customer deleted successfully.');
+        return redirect()->route('customer.index')->with('success', 'Customer deleted successfully.');
     }
 }

@@ -122,7 +122,7 @@
                                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing.
                                 </p>
                                 <div class="pricing">
-                                    <h1>$59.99</h1>
+                                    <h1>$5.9</h1>
                                     <a href="#" class="btn btn-dark px-5 py-2 mb-5">Purchase Now
                                     </a>
                                 </div>
@@ -136,7 +136,7 @@
                                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing.
                                 </p>
                                 <div class="pricing">
-                                    <h1>$49.99</h1>
+                                    <h1>$4.9</h1>
                                     <a href="#" class="btn btn-dark px-5 py-2 mb-5">Purchase Now
                                     </a>
                                 </div>
@@ -150,7 +150,7 @@
                                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing.
                                 </p>
                                 <div class="pricing">
-                                    <h1>$29.99</h1>
+                                    <h1>$2.9</h1>
                                     <a href="#" class="btn btn-dark px-5 py-2 mb-5">Purchase Now
                                     </a>
                                 </div>

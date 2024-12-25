@@ -43,21 +43,20 @@
         <section class="section-4">
             <div class="container text-center">
                 <h1 class="text-dark">Our Books </h1>
-                <p class="text-secondary">Knowledge is Power.</p>
+                <p class="text-secondary">Knowledge is Power</p>
             </div>
             <div class="team row">
                 <div class="col-md-4 col-12 text-center">
                     <div class="card mr-2 d-inline-block shadow-lg">
                         <div class="card-img-top">
-                        <img class="img-fluid border-radius p-4" src="/img/ath.png" alt="Member">    
+                        <img class="img-fluid border-radius p-4" src="\img\atmhb.jpg" alt="Book">    
                         </div>
                         <div class="card-body">
+                        <h2 class="card_title">Attomic Habits</h2>
                             <h3 class="card-title">Author: James Clear</h3>
-                            <p class="card-text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Cumque, sequi?
-                            </p>
-                            <p class="text-black-50">think widely</p>
+                            <h4 class="card-title">Genre: Self-help</h4>
+                            <h4 class="card-title">Price: <span>$5.9</span></h4>
+                            
                         </div>
                     </div>
                 </div>
@@ -69,15 +68,14 @@
                             <!-- Card 2-->
                             <div class="card mr-2 d-inline-block shadow-lg">
                             <div class="card-img-top">
-                            <img class="img-fluid border-radius p-4" src="/img/phc.jpg" alt="Member">    
+                            <img class="img-fluid border-radius p-4" src="\img\pom.jpg" alt="Book">    
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title">Author :Alex Garry</h3>
-                                <p class="card-text">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Cumque, sequi?
-                                </p>
-                                <p class="text-black-50">Train your brain</p>
+                            <h2 class="card_title">The Psychology Of Money</h2>
+                                <h3 class="card-title">Author: Alex Garry</h3>
+                                <h4 class="card-title">Genre: Self-help</h4>
+                                <h4 class="card-title">Price: <span>$5.9</span></h4>
+                                
                             </div>
                         </div>
                           </div>
@@ -93,15 +91,105 @@
                     <!-- Card 4 -->
                     <div class="card mr-2 d-inline-block shadow-lg">
                         <div class="card-img-top">
-                        <img class="img-fluid border-radius p-4" src="/img/ath.png" alt="Member">    
+                        <img class="img-fluid border-radius p-4" src="\img\thinking fast and slow.jpg" alt="Book">    
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">Author:James Clear</h3>
-                            <p class="card-text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Cumque, sequi?
-                            </p>
-                            <p class="text-black-50">Think Positive!</p>
+                        <h2 class="card_title">Thinking Fast and Slow</h2>
+                            <h3 class="card-title">Author: Danial Kahneman</h3>
+                            <h4 class="card-title">Genre: Self-help</h4>
+                            <h4 class="card-title">Price: <span>$5.9</span></h4>
+                          
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12 text-center ">
+                    <!-- Card 4 -->
+                    <div class="card mr-2 d-inline-block shadow-lg">
+                        <div class="card-img-top">
+                        <img class="img-fluid border-radius p-4" src="\img\Ten Patterns that Explain the Universe.jpg" alt="Book">    
+                        </div>
+                        <div class="card-body">
+                        <h2 class="card_title">Ten Patterns that Explain the Universe</h2>
+                            <h3 class="card-title">Author: Brain Clegg</h3>
+                            <h4 class="card-title">Genre: Science</h4>
+                            <h4 class="card-title">Price: <span>$5.9</span></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12 text-center ">
+                    <!-- Card 4 -->
+                    <div class="card mr-2 d-inline-block shadow-lg">
+                        <div class="card-img-top">
+                        <img class="img-fluid border-radius p-4" src="\img\Believing is seeing.jpg" alt="Book">    
+                        </div>
+                        <div class="card-body">
+                        <h2 class="card_title">Believing is Seeing</h2>
+                            <h3 class="card-title">Author: Micheal Guillien</h3>
+                            <h4 class="card-title">Genre: Science</h4>
+                            <h4 class="card-title">Price: <span>$5.9</span></h4>
+                          
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12 text-center ">
+                    <!-- Card 4 -->
+                    <div class="card mr-2 d-inline-block shadow-lg">
+                        <div class="card-img-top">
+                        <img class="img-fluid border-radius p-4" src="\img\A Brief History of Time.jpg" alt="Book">    
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card_title">A Brief History of Time</h2>
+                            <h3 class="card-title">Author: Stephen Hawking</h3>
+                            <h4 class="card-title">Genre: Science</h4>
+                            <h4 class="card-title">Price: <span>$5.9</span></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12 text-center ">
+                    <!-- Card 4 -->
+                    <div class="card mr-2 d-inline-block shadow-lg">
+                        <div class="card-img-top">
+                        <img class="img-fluid border-radius p-4" src="\img\call of the wild.png" alt="Book">    
+                        </div>
+                        <div class="card-body">
+                        <h2 class="card_title">Call of the Wild</h2>
+                            <h3 class="card-title">Author: Lawrence</h3>
+                            <h4 class="card-title">Genre: Novel</h4>
+                            <h4 class="card-title">Price: <span>$5.9</span></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12 text-center ">
+                    <!-- Card 4 -->
+                    <div class="card mr-2 d-inline-block shadow-lg">
+                        <div class="card-img-top">
+                        <img class="img-fluid border-radius p-4" src="\img\Invisible man.jpg" alt="Book">    
+                        </div>
+                        <div class="card-body">
+                        <h2 class="card_title">Invisible man</h2>
+                            <h3 class="card-title">Author: Ralph Ellisan</h3>
+                            <h4 class="card-title">Genre: Novel</h4>
+                            <h4 class="card-title">Price: <span>$5.9</span></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12 text-center ">
+                    <!-- Card 4 -->
+                    <div class="card mr-2 d-inline-block shadow-lg">
+                        <div class="card-img-top">
+                        <img class="img-fluid border-radius p-4" src="\img\LOR.jpg" alt="Book">    
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card_title">Lord Of The Rings</h2>
+                            <h3 class="card-title">Author: Kim Mark</h3>
+                            <h4 class="card-title">Genre: Novel</h4>
+                            <h4 class="card-title">Price: <span>$5.9</span></h4>
                         </div>
                     </div>
                 </div>
@@ -124,7 +212,7 @@
                             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing.
                             </p>
                             <div class="pricing">
-                                <h1>$59.99</h1>
+                                <h1>$5.9</h1>
                                 <a href="#" class="btn btn-dark px-5 py-2 mb-5">Purchase Now
                                 </a>
                             </div>
@@ -138,7 +226,7 @@
                             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing.
                             </p>
                             <div class="pricing">
-                                <h1>$49.99</h1>
+                                <h1>$4.9</h1>
                                 <a href="#" class="btn btn-dark px-5 py-2 mb-5">Purchase Now
                                 </a>
                             </div>
@@ -152,7 +240,7 @@
                             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing.
                             </p>
                             <div class="pricing">
-                                <h1>$29.99</h1>
+                                <h1>$2.9</h1>
                                 <a href="#" class="btn btn-dark px-5 py-2 mb-5">Purchase Now
                                 </a>
                             </div>

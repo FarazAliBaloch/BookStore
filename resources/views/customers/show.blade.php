@@ -47,10 +47,7 @@
             <li><strong>Last Name:</strong> {{ $customer->last_name }}</li>
             <li><strong>Email:</strong> {{ $customer->email }}</li>
             <li><strong>Address:</strong> {{ $customer->address }}</li>
-            <li><strong>Address 2:</strong> {{ $customer->address_2 }}</li>
-            <li><strong>City:</strong> {{ $customer->city }}</li>
-            <li><strong>State:</strong> {{ $customer->state }}</li>
-            <li><strong>Zip:</strong> {{ $customer->zip }}</li>
+           
         </ul>
         <a href="{{ route('customer.index') }}" class="btn btn-secondary">Back to Customers</a>
     </div>
