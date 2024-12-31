@@ -19,15 +19,6 @@ Route::get('/sign-in', [HomeController::class, 'signIn'])->name('home.signIn');
 Route::get('/about', [HomeController::class, 'about'])->name('home.about');
 
 
-// Route::get('/layouts', function () {
-//     return view('layouts.web');
-// });
-
-
-// Route::get('/post', function () {
-//     return view('post');
-// });
-
 
 Route::middleware('auth')->name('course.')->prefix('course')->group(function() {
     Route::get('/', [CourseController::class, 'index'])->name('index');
@@ -56,7 +47,7 @@ Route::prefix('book')->group(function () {
     Route::get('/', [BookController::class, 'index'])->name('book.index');
     Route::get('create', [BookController::class, 'create'])->name('book.create');
     Route::post('/', [BookController::class, 'store'])->name('book.store');
-    Route::get('search', [BookController::class, 'search'])->name('book.search');
+    Route::get('/search', [BookController::class, 'search'])->name('book.search');
     Route::get('{id}/edit', [BookController::class, 'edit'])->name('book.edit');
     Route::put('{book}', [BookController::class, 'update'])->name('book.update');
     Route::delete('{id}', [BookController::class, 'destroy'])->name('book.destroy');
@@ -69,9 +60,6 @@ Route::get('/welcome',function () {
 }); 
 
 
-// Route::get('/post', function () {
-//     return view('post');
-// });
 
 
 

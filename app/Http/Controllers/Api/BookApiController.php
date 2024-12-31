@@ -15,6 +15,7 @@ class BookApiController extends Controller
         $this->bookService = $bookService;
     }
 
+    
     /**
      * Display a listing of the books.
      */

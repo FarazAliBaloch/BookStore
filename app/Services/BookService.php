@@ -25,8 +25,8 @@ class BookService
         $data = $request->validate([
             "title" => "required|string",
             "author" => "required|string",
-            "descryption" => "required|string",
-            "punchline" => "required|string",
+            "genre" => "required|string",
+            "price" => "required|string",
             "category_id" => "required",
             "image" => "nullable|image|mimes:png,jpg,jpeg|max:3000",
         ]);
@@ -61,8 +61,8 @@ class BookService
         $data = $request->validate([
             "title" => "required|string",
             "author" => "required|string",
-            "descryption" => "required|string",
-            "punchline" => "required|string",
+            "genre" => "required|string",
+            "price" => "required|string",
             "category_id" => "required",
             "image" => "nullable|image|mimes:png,jpg,jpeg|max:3000",
         ]);

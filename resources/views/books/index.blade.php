@@ -13,7 +13,6 @@
         <h1>Books List</h1>
         <a href="{{ route('book.create') }}" class="btn btn-primary mb-3">Add New Book</a>
 
-
         <table class="table table-bordered">
             <thead>
                 <tr>
@@ -41,7 +40,7 @@
                             <form action="{{ route('book.destroy', $book->id) }}" method="POST" style="display:inline;">
                                 @csrf
                                 @method('DELETE')
-                                + <button type="submit" class="btn btn-danger"
+                                 <button type="submit" class="btn btn-danger"
                                     onclick="return confirm('Are you sure?')">Delete</button>
                             </form>
                         </td>
@@ -50,7 +49,7 @@
             </tbody>
         </table>
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     @push('scripts')
         <script>
             $(document).ready(function() {
@@ -59,7 +58,7 @@
                     if (query.length > 0) {
                         // Perform the AJAX request
                         $.ajax({
-                            url: 'http://127.0.0.1:8000/book/search',
+                            url: '{{route('book.search')}}',
                             method: 'GET',
                             data: {
                                 query: query
@@ -78,5 +77,6 @@
                 });
             });
         </script>
+        
     @endpush
 @endsection

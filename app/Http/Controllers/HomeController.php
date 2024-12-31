@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Book;
 
 class HomeController extends Controller
 {
@@ -11,14 +12,15 @@ class HomeController extends Controller
     }
 
     public function books(){
-        return view('layouts.books');
+        $books = Book::all();
+        return view('layouts.books' ,compact('books'));
     }
 
     public function signIn(){
         return view('layouts.signIn');
     }
     
-    public function about(){
+ public function about(){
         return view('layouts.about');
     }
 }

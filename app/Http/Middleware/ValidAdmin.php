@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
 
+
 class ValidAdmin
 {
     /**
@@ -23,4 +24,6 @@ class ValidAdmin
             return redirect()->route('login');
         }
     }
+
+    
 }
